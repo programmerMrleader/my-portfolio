@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>John Doe | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Navigation Menu -->
-  <nav>
+  <nav class="navbar">
+    <div class="logo">John Doe</div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -19,15 +20,43 @@
   <!-- Hero Section -->
   <header class="hero">
     <div class="hero-content">
-      <h1>Hi, I’m John Doe</h1>
-      <p>Full-Stack Developer | Rust, Python, JavaScript, HTML, CSS</p>
+      <h1 class="animate-text">Hi, I’m John Doe</h1>
+      <p class="subtitle">Full-Stack Developer | Rust, Python, JavaScript, HTML, CSS</p>
       <a href="about.html" class="btn">Learn More About Me</a>
     </div>
+    <div class="hero-image">
+      <img src="assets/profile.jpg" alt="John Doe">
+    </div>
   </header>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/placeholder.jpg" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>A brief description of the project.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/placeholder.jpg" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>A brief description of the project.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/placeholder.jpg" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>A brief description of the project.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
     &copy; 2023 John Doe. All rights reserved.
   </footer>
+
+  <!-- JavaScript for Animations -->
+  <script src="script.js"></script>
 </body>
 </html>
