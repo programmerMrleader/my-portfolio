@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "homepage": "https://programmerMrleader.github.io/my-portfolio",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build": "node build.js",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^5.3.0",
-    "nodemon": "^3.1.14"
+    "nodemon": "^1.14.10"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

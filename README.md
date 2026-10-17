@@ -49,3 +49,16 @@ variable to use a different port.
 
 Featured project descriptions and links are maintained in `routes/index.js`.
 The profile avatar and typefaces are loaded from GitHub and Google Fonts.
+
+## Deploying to GitHub Pages
+
+The portfolio is built into a static `build/` folder and deployed with GitHub Pages.
+After pushing to `main`, the workflow in `.github/workflows/deploy-pages.yml` creates the site automatically.
+
+If you need to deploy manually instead:
+
+```bash
+npm run deploy
+```
+
+Then enable GitHub Pages in the repo settings and choose the `gh-pages` branch or use the GitHub Actions Pages deployment flow.

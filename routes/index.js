@@ -1,9 +1,7 @@
 import { Router } from "express";
 
-const router = Router();
-
-router.get("/", (req, res) => {
-  res.render("index", {
+export function getHomePageData() {
+  return {
     year: new Date().getFullYear(),
     profile: {
       name: "Wai Yan Hein",
@@ -47,7 +45,13 @@ router.get("/", (req, res) => {
         tags: ["C", "Operating systems", "Learning"],
       },
     ],
-  });
+  };
+}
+
+const router = Router();
+
+router.get("/", (req, res) => {
+  res.render("index", getHomePageData());
 });
 
 export default router;
