@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio Website",
+  "homepage": "https://github.com/programmerMrleader/my-portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/programmerMrleader/my-portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/programmerMrleader/my-portfolio.git"
+  },
+  "license": "ISC",
+  "author": "Wai Yan Hein",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "nodemon": "^3.1.14"
+  }
+}
